@@ -22,11 +22,11 @@
         if (1676511529174 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.state.towers.forEach(tower => {
-                tower.stats.dmg = 1e6;
-                tower.stats.fireRate = 50;
+                tower.stats.dmg = 50;
+                tower.stats.fireRate = 10;
                 tower.stats.ghostDetect = true;
-                tower.stats.maxTargets = 1e6;
-                tower.stats.numProjectiles &&= 100;
+                tower.stats.maxTargets = 10;
+                tower.stats.numProjectiles &&= 5;
                 tower.stats.range = 100;
                 if (tower.stats.auraBuffs) for (const buff in tower.stats.auraBuffs) tower.stats.auraBuffs[buff] *= 100;
             });
